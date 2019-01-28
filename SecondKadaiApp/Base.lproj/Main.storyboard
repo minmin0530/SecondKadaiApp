@@ -18,30 +18,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w2a-Aw-Rtn">
-                                <rect key="frame" x="139" y="205" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w2a-Aw-Rtn">
+                                <rect key="frame" x="56" y="205" width="263" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHB-2o-hjM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHB-2o-hjM">
                                 <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="jew-hT-CFO" kind="show" id="vYE-ed-9r3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前を表示してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qy-9X-yJ3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qy-9X-yJ3">
                                 <rect key="frame" x="92" y="102" width="191" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w2a-Aw-Rtn" firstAttribute="top" secondItem="3qy-9X-yJ3" secondAttribute="bottom" constant="82" id="FzO-jP-enu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IHB-2o-hjM" secondAttribute="bottom" constant="319" id="GRA-kt-XFd"/>
+                            <constraint firstItem="3qy-9X-yJ3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="Jsf-6I-j9K"/>
+                            <constraint firstItem="w2a-Aw-Rtn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="U61-XL-SqS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IHB-2o-hjM" secondAttribute="trailing" constant="165" id="UcL-7f-0EI"/>
+                            <constraint firstItem="IHB-2o-hjM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="Z9u-55-Eeo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w2a-Aw-Rtn" secondAttribute="trailing" constant="56" id="b9z-WY-vwd"/>
+                            <constraint firstItem="IHB-2o-hjM" firstAttribute="top" secondItem="w2a-Aw-Rtn" secondAttribute="bottom" constant="83" id="dN7-Jp-ShD"/>
+                            <constraint firstItem="3qy-9X-yJ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="naK-Bc-nxV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3qy-9X-yJ3" secondAttribute="trailing" constant="92" id="pzM-Xh-Kwx"/>
+                            <constraint firstItem="IHB-2o-hjM" firstAttribute="top" secondItem="w2a-Aw-Rtn" secondAttribute="bottom" constant="83" id="uix-bF-TMt"/>
+                            <constraint firstItem="w2a-Aw-Rtn" firstAttribute="top" secondItem="3qy-9X-yJ3" secondAttribute="bottom" constant="82" id="xVJ-cu-qVT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -50,6 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="133.5832083958021"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="BbP-3M-d76">
@@ -59,16 +71,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxX-8P-G42">
-                                <rect key="frame" x="60" y="150" width="148" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxX-8P-G42">
+                                <rect key="frame" x="60" y="150" width="255" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuH-ZU-s4b">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuH-ZU-s4b">
                                 <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="nhH-Yq-JbK" kind="unwind" unwindAction="unwind:" id="xOQ-2K-gF6"/>
@@ -76,6 +86,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pfL-7Q-eqy" firstAttribute="trailing" secondItem="fuH-ZU-s4b" secondAttribute="trailing" constant="165" id="AQ1-qD-XOk"/>
+                            <constraint firstItem="fuH-ZU-s4b" firstAttribute="top" secondItem="BxX-8P-G42" secondAttribute="bottom" constant="147" id="QVC-RO-f6I"/>
+                            <constraint firstItem="fuH-ZU-s4b" firstAttribute="top" secondItem="BxX-8P-G42" secondAttribute="bottom" constant="147" id="REo-5I-QW9"/>
+                            <constraint firstItem="BxX-8P-G42" firstAttribute="leading" secondItem="pfL-7Q-eqy" secondAttribute="leading" constant="60" id="hl4-PQ-JQc"/>
+                            <constraint firstItem="pfL-7Q-eqy" firstAttribute="bottom" secondItem="fuH-ZU-s4b" secondAttribute="bottom" constant="319" id="nXN-hZ-Lcj"/>
+                            <constraint firstItem="BxX-8P-G42" firstAttribute="top" secondItem="pfL-7Q-eqy" secondAttribute="top" constant="130" id="poE-bd-XV0"/>
+                            <constraint firstItem="fuH-ZU-s4b" firstAttribute="leading" secondItem="pfL-7Q-eqy" secondAttribute="leading" constant="164" id="rwP-Fc-Db4"/>
+                            <constraint firstItem="pfL-7Q-eqy" firstAttribute="trailing" secondItem="BxX-8P-G42" secondAttribute="trailing" constant="60" id="xcH-hn-wMn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pfL-7Q-eqy"/>
                     </view>
                     <connections>
